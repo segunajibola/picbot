@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #2A1A1F;
+    color: white;
+}
+
+* {
+    font-family: "Lucida Console", Monaco, monospace; 
+}
+
+.my-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my-photo {
+    border: 0.1rem solid white;
+    border-radius: 0.7rem;
+    margin: 0.5rem;
+}
