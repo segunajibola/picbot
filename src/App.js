@@ -63,7 +63,7 @@ function App() {
     <>
       <h1 className="text-red-500">Hello World</h1>
       {/* // map through all images and set to "image" */}
-      <div className="my-gallery my-photos">
+      <div className="my-photos">
         {images.map((image) => (
           <ImageCard
             key={image.id}
