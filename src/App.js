@@ -60,8 +60,18 @@ function App() {
   // });
 
   return (
-    <>
-      <h1 className="text-red-500">Hello- World</h1>
+    <div className="bg-[#2A1A1F]">
+      <div>
+        <h1 className="text-7xl">
+          Picbot
+        </h1>
+        <div className="text-center m-10 flex flex-col space-y-3">
+          <h1 className="text-2xl">
+          What picture would you like to see?
+        </h1>
+        <input className="w-1/2 m-auto text-black" type="text" />
+      </div>
+      
       {/* // map through all images and set to "image" */}
       <div className="my-photos">
         {images.map((image) => (
@@ -72,7 +82,7 @@ function App() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
