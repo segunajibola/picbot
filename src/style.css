@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-* {
-  font-family: "Lucida Console", Monaco, monospace; 
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #2A1A1F;
-  color: white;
-}
-
 .my-gallery {
   display: flex;
   flex-direction: column;
