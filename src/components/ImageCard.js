@@ -2,16 +2,18 @@ import React from 'react';
 
 const ImageCard = ({ image }) => {
 
+    console.log("here-again", image)
+
     const tags = image.tags.split(",");
 
     return (
-        <div className="max-w-sm md:max-w-2xl rounded overflow-hidden shadow-lg">
-        <img src={image.webformatURL} alt="" className="w-full"/>
-        <div className="px-6 py-4">
+        <div className="max-w-sm md:w-96 md:max-h-full m-2 overflow-hidden shadow-white shadow-lg border-blue-500 bg-gray-900 rounded-md">
+        <img src={image.webformatURL} alt="" className="w-full h-72 object-cover object-center"/>
+        <div className="px-6 py-2">
           <div className="font-bold text-purple-500 text-xl mb-2">
           Photo by {image.user}
           </div>
-          <ul>
+          <ul className='flex'>
             <li>
               <strong>Views: {image.views}</strong>
             </li>
@@ -21,11 +23,14 @@ const ImageCard = ({ image }) => {
             <li>
               <strong>Likes: {image.likes}</strong>
             </li>
+            <li>
+              <strong>Comments: {image.comments}</strong>
+            </li>
           </ul>
         </div>
-        <div className="px-6 py-4">
+        <div className="px-6 py-3">
             {tags.map((tag, index) => (
-               <span key={index} className="inline-block bg-gray-200 rounded-ful px-3 py-1 text-sm font-semi-bold text-gray-700 mr-2">
+               <span key={index} className="inline-block bg-gray-200 rounded-ful px-3 py-1 text-sm font-semi-bold text-gray-700 m-1">
             {`${index + 1} - ${tag}`}
           </span> 
             ))}

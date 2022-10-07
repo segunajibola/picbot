@@ -34,7 +34,7 @@ function App() {
       {/* // map through all images and set to "image" */}
       <ImageSearch searchText={(text) => setTerm(text)} />
 
-      <div className="my-photos">
+      <div className="flex flex-wrap flex-col-3 justify-center">
         {images.map((image) => (
           <ImageCard
             key={image.id}

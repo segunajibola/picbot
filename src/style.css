@@ -1,36 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.my-gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: flex;
-  width: 90%;
-  margin: auto;
-  justify-content: center;
-}
-
-#my-selected-photo {
-  width: 50%;
-  margin: 20px auto;
-  display: none;
-}
-
-.par {
-  text-align: center;
-  margin: 10px;
-}
-
-.my-photos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.my-photo {
-  border: 0.1rem solid white;
-  border-radius: 0.7rem;
-  margin: 0.5rem;
-  width: 15%;
-}
