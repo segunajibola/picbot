@@ -2,14 +2,6 @@ import react, { useState, useEffect } from "react";
 import ImageCard from "./components/ImageCard";
 import ImageSearch from "./components/ImageSearch";
 
-// async function getPhotos() {
-//   let response = await fetch(
-//     `https://pixabay.com/api/?key=${process.env.API_KEY}&q=yellow+flowers&image_type=photo`
-//   );
-//   let photos = await response.json();
-//   return photos.hits;
-// }
-
 function App() {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +26,11 @@ function App() {
       {/* // map through all images and set to "image" */}
       <ImageSearch searchText={(text) => setTerm(text)} />
 
-      <div className="flex flex-wrap flex-col-3 justify-center">
+      {!isLoading && images.length === 0 && <h1 className="text-5xl text-center mx-auto mt-32">No Images found</h1>}
+
+      {!term && images.length === 0 && <h1 className="text-5xl text-center mx-auto mt-32">No Images found</h1>}
+
+      {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32">Images loading, please wait...</h1> : <div className="flex flex-wrap flex-col-3 justify-center">
         {images.map((image) => (
           <ImageCard
             key={image.id}
@@ -42,7 +38,7 @@ function App() {
             image={image}
           />
         ))}
-      </div>
+      </div>}
     </div>
   );
 }
