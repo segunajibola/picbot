@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 
 const ImageSearch = ({ searchText }) => {
+  const [text, setText] = useState("");
 
-    const [text, setText] = useState("");
+  const onSubmit = (e) => {
+    e.preventDefault();
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-
-        searchText(text);
-    }
+    searchText(text);
+  };
 
   return (
     <div className="text-center m-5 md:m-10 flex flex-col space-y-3">
       <h1 className="text-2xl">What picture do you want to see?</h1>
       <form onSubmit={onSubmit} className="flex space-x-3">
-        <input onChange={e => setText(e.target.value)}
+        <input
+          onChange={(e) => setText(e.target.value)}
           className="w-5/6 text-black rounded-md h-12 outline-0 text-2xl p-2 text-center"
           placeholder="flowers"
           type="text"

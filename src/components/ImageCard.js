@@ -2,8 +2,6 @@ import React from 'react';
 
 const ImageCard = ({ image }) => {
 
-    console.log("here-again", image)
-
     const tags = image.tags.split(",");
 
     return (
