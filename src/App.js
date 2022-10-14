@@ -7,6 +7,8 @@ function App() {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [term, setTerm] = useState("");
+  const [modal, setModal] = useState("");
+  const [currentImg, setCurrentImg] = useState("");
 
   useEffect(() => {
     fetch(
@@ -21,11 +23,17 @@ function App() {
       .catch((err) => console.log(err));
   }, [term]);
 
-  const handleClick = (id) => {
-    console.log("Clicked image's id", id);
-    images[id] = images;
+  const handleClick = (index) => {
+    console.log("Clicked image's index", index);
+    // setImages(images[index]);
+    setCurrentImg(index);
+    setModal(true);
+    let selectedImg = images[index]
+    console.log("Clicked image's index", selectedImg);
 
-    return <Modal images={images} />;
+
+
+    return (<Modal key={selectedImg.id} images={selectedImg} />);
   };
 
   return (
@@ -48,10 +56,10 @@ function App() {
         </h1>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-11/12 overflow-hidden justify-center align-center m-5">
-          {images.map((image) => (
+          {images.map((image, index) => (
             <div
               onClick={() => {
-                handleClick(image.id);
+                handleClick(index);
               }}
               key={image.id}
             >
@@ -60,6 +68,8 @@ function App() {
           ))}
         </div>
       )}
+
+      {/* {modal ? <Modal images={images} /> : ""} */}
     </div>
   );
 }
