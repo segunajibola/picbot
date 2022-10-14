@@ -26,14 +26,14 @@ function App() {
   const handleClick = (index) => {
     console.log("Clicked image's index", index);
     // setImages(images[index]);
-    setCurrentImg(index);
+    setCurrentImg(images[index]);
     setModal(true);
-    let selectedImg = images[index]
-    console.log("Clicked image's index", selectedImg);
-
-
-
-    return (<Modal key={selectedImg.id} images={selectedImg} />);
+    // let selectedImg = images[index];
+    console.log("Clicked image's index", currentImg);
+    
+    // return ({modal ? (<div>
+    //   <Modal key={selectedImg.id} images={selectedImg} />
+    //   </div>) : ""});
   };
 
   return (
@@ -49,6 +49,11 @@ function App() {
       {!term && images.length === 0 && (
         <h1 className="text-5xl text-center mx-auto mt-32">No Images found</h1>
       )}
+
+      {modal ? (
+      <div><Modal key={currentImg.id} images={currentImg} />
+      </div>
+      ) : ""}
 
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto mt-32">
@@ -69,7 +74,7 @@ function App() {
         </div>
       )}
 
-      {/* {modal ? <Modal images={images} /> : ""} */}
+      {/* {modal ? <Modal key={selectedImg.id} images={selectedImg} /> : ""} */}
     </div>
   );
 }
