@@ -1,10 +1,11 @@
 import React from "react";
 
-const Modal = ( image ) => {
+const Modal = ({ images }) => {
+  console.log("this", images)
   return (
     <div>
-      <div className="text-red-500 w-screen h-screen bg-white">
-        <h1>{image.id}</h1>
+      <div className="absolute text-red-500 w-screen h-screen bg-green-500">
+        <h1 className="text-2xl text-center">{images.id}</h1>
       </div>
     </div>
   );
