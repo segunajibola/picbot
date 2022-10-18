@@ -16,14 +16,14 @@ const ImageSearch = ({ searchText }) => {
         <input
           onChange={(e) => setText(e.target.value)}
           className="w-5/6 text-black rounded-md h-12 outline-0 text-2xl p-2 text-center"
-          placeholder="flowers"
+          placeholder="input picture name here"
           type="text"
         />
         <button className="w-1/6 bg-[#2A1A1F] hover:bg-white border-white text-lg md:text-2xl border-4 text-white hover:text-black py-1 px-2 rounded-md">
           Search
         </button>
       </form>
-      <p>Click each image to see more details.</p>
+      <p className="p-3 text-2xl">Click each image to see more details.</p>
     </div>
   );
 };

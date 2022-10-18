@@ -5,10 +5,10 @@ import Modal from "./components/Modal";
 
 function App() {
   const [images, setImages] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [term, setTerm] = useState("");
   const [modal, setModal] = useState("");
-  const [currentImg, setCurrentImg] = useState("");
+  const [currentImg, setCurrentImg] = useState([]);
 
   useEffect(() => {
     fetch(
@@ -25,35 +25,40 @@ function App() {
 
   const handleClick = (index) => {
     console.log("Clicked image's index", index);
+    let selectedImg = images[index];
     // setImages(images[index]);
-    setCurrentImg(images[index]);
     setModal(true);
-    // let selectedImg = images[index];
-    console.log("Clicked image's index", currentImg);
-    
-    // return ({modal ? (<div>
-    //   <Modal key={selectedImg.id} images={selectedImg} />
-    //   </div>) : ""});
+    setCurrentImg(selectedImg);
+
+    console.log("current img", currentImg);
+    console.log("selected img", selectedImg);
   };
 
   return (
-    <div className="bg-[#2A1A1F] text-white">
+    <div className="bg-[#2A1A1F] h-screen text-white">
       <h1 className="text-7xl text-center">Picbot</h1>
 
       <ImageSearch searchText={(text) => setTerm(text)} />
-
-      {!isLoading && images.length === 0 && (
-        <h1 className="text-5xl text-center mx-auto mt-32">No Images found</h1>
+      
+      {!term && images.length === 0 && (
+        <h1 className="text-5xl text-center mx-auto mt-32">
+          Input picture name above...
+        </h1>
       )}
 
-      {!term && images.length === 0 && (
-        <h1 className="text-5xl text-center mx-auto mt-32">No Images found</h1>
+      {!isLoading && images.length === 0 && (
+        <h1 className="text-5xl text-center mx-auto mt-32">
+          No Images found 1
+        </h1>
       )}
 
       {modal ? (
-      <div><Modal key={currentImg.id} images={currentImg} />
-      </div>
-      ) : ""}
+        <div>
+          <Modal key={currentImg.id} currentIm={currentImg} />
+        </div>
+      ) : (
+        ""
+      )}
 
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto mt-32">
