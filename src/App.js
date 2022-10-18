@@ -46,7 +46,7 @@ function App() {
         </h1>
       )}
 
-      {!isLoading && images.length === 0 && (
+      {term && images.length === 0 && (
         <h1 className="text-5xl text-center mx-auto mt-32">
           No Images found 1
         </h1>
