@@ -5,7 +5,7 @@ import Modal from "./components/Modal";
 
 function App() {
   const [images, setImages] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [term, setTerm] = useState("");
   const [modal, setModal] = useState("");
   const [currentImg, setCurrentImg] = useState([]);
@@ -47,20 +47,18 @@ function App() {
       )}
 
       {term && images.length === 0 && (
-        <h1 className="text-5xl text-center mx-auto mt-32">
-          No Images found 1
+        <h1 className="text-3xl text-center mx-auto mt-32">
+          No Images found, please enter a valid picture name.
         </h1>
       )}
 
-      {modal ? (
+      {modal && (
         <div>
           <Modal key={currentImg.id} currentIm={currentImg} />
         </div>
-      ) : (
-        ""
       )}
 
-      {isLoading ? (
+      {term && isLoading ? (
         <h1 className="text-6xl text-center mx-auto mt-32">
           Images loading, please wait...
         </h1>
