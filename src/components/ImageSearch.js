@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ImageSearch = ({ searchText }) => {
+const ImageSearch = ({ searchText, images }) => {
   const [text, setText] = useState("");
 
   const onSubmit = (e) => {
@@ -23,7 +23,7 @@ const ImageSearch = ({ searchText }) => {
           Search
         </button>
       </form>
-      <p className="p-3 text-2xl">Click each image to see more details.</p>
+      {images.length ? <p className="p-3 text-2xl">Click each image to see more details.</p> : ""}
     </div>
   );
 };

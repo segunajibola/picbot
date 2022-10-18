@@ -38,8 +38,8 @@ function App() {
     <div className="bg-[#2A1A1F] h-screen text-white">
       <h1 className="text-7xl text-center">Picbot</h1>
 
-      <ImageSearch searchText={(text) => setTerm(text)} />
-      
+      <ImageSearch searchText={(text) => setTerm(text)} images={images} />
+
       {!term && images.length === 0 && (
         <h1 className="text-5xl text-center mx-auto mt-32">
           Input picture name above...
