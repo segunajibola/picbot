@@ -26,13 +26,10 @@ function App() {
 
   const handleClick = (index) => {
     console.log("Clicked image's index", index);
-    let selectedImg = images[index];
-    // setImages(images[index]);
+    setCurrentImg(images[index]);
     setModal(true);
-    setCurrentImg(selectedImg);
 
     console.log("current img", currentImg);
-    console.log("selected img", selectedImg);
   };
 
   return (
