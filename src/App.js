@@ -1,4 +1,5 @@
 import react, { useState, useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
 import ImageCard from "./components/ImageCard";
 import ImageSearch from "./components/ImageSearch";
 import Modal from "./components/Modal";
@@ -36,7 +37,12 @@ function App() {
 
   return (
     <div className="bg-[#2A1A1F] h-screen text-white">
-      <h1 className="text-7xl text-center">Picbot</h1>
+      <div className="flex">
+        <h1 className="text-7xl inline text-center">Picbot</h1>
+        <span className="items-center content-center justify-items-center">
+          <FaGithub />
+        </span>
+      </div>
 
       <ImageSearch searchText={(text) => setTerm(text)} images={images} />
 
@@ -53,8 +59,8 @@ function App() {
       )}
 
       {modal && (
-        <div>
-          <Modal key={currentImg.id} currentIm={currentImg} />
+        <div className="bg-gray-900 z-10 m-auto w-full text-center">
+          <Modal key={currentImg.id} images={images} currentImg={currentImg} />
         </div>
       )}
 
