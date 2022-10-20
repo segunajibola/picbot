@@ -7,12 +7,11 @@ const { id, webformatURL } = currentImg;
 
   console.log("this", id);
   return (
-    <div className="">
-      <div className="fixed z-10 text-red-500 w-32 h-64 bg-green-500">
+      <div className="fixed flex flex-col justify-center items-center text-red-500 w-9/12 h-4/6 bg-green-500">
+        <div>x</div>
         <h1 className="text-2xl text-center">{id}</h1>
         <img className="" src={webformatURL} alt="" />
       </div>
-    </div>
   );
 };
 
