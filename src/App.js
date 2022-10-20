@@ -56,7 +56,7 @@ function App() {
       )}
 
       {modal && (
-        <div className="fixed inset-8 bg-gray-900 z-10 m-auto w-10/12 h-5/6 justify-center items-center flex text-center">
+        <div className="fixed inset-8 bg-green-100 z-10 m-auto w-10/12 h-5/6 justify-center items-center flex text-center">
           <Modal key={currentImg.id} setModal={setModal} images={images} currentImg={currentImg} />
         </div>
       )}
