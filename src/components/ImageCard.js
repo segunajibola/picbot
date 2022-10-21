@@ -11,7 +11,7 @@ const ImageCard = ({ image }) => {
           <div className="font-bold text-purple-500 text-xl mb-2">
           Photo by {image.user}
           </div>
-          <ul className='flex'>
+          {/* <ul className='flex'>
             <li>
               <strong>Views: {image.views}</strong>
             </li>
@@ -24,16 +24,16 @@ const ImageCard = ({ image }) => {
             <li>
               <strong>Comments: {image.comments}</strong>
             </li>
-          </ul>
+          </ul> */}
         </div>
-        <div className="px-6 py-3">
+        {/* <div className="px-6 py-3">
             {tags.map((tag, index) => (
                <span key={index} className="inline-block bg-gray-200 rounded-ful px-3 py-1 text-sm font-semi-bold text-gray-700 m-1">
             {`${index + 1} - ${tag}`}
           </span> 
             ))}
          
-        </div>
+        </div> */}
     </div>
     )
 }
