@@ -11,20 +11,6 @@ const ImageCard = ({ image }) => {
           <div className="font-bold text-purple-500 text-xl mb-2">
           Photo by {image.user}
           </div>
-          {/* <ul className='flex'>
-            <li>
-              <strong>Views: {image.views}</strong>
-            </li>
-            <li>
-              <strong>Downloads: {image.downloads}</strong>
-            </li>
-            <li>
-              <strong>Likes: {image.likes}</strong>
-            </li>
-            <li>
-              <strong>Comments: {image.comments}</strong>
-            </li>
-          </ul> */}
         </div>
         {/* <div className="px-6 py-3">
             {tags.map((tag, index) => (

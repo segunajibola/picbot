@@ -25,7 +25,6 @@ const Modal = ({ currentImg, setModal, term }) => {
             <img className="h-[350px] rounded-lg" src={webformatURL} alt="" />
           </div>
           <div className="p-2 md:p-10 space-y-4 text-xl">
-            <h1>Photo by {user}</h1>
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
             <h1>Likes: {likes}</h1>
