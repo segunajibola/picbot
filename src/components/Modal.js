@@ -1,33 +1,50 @@
-import React from "react";
+import react, { useState } from "react";
+import { saveAs } from "file-saver";
 
-const Modal = ({ currentImg, setModal }) => {
+
+const Modal = ({ currentImg, setModal, setImgLink, imgLink, term }) => {
   const { id, webformatURL, user, comments, downloads, likes } = currentImg;
 
-  console.log("this", id);
+  setImgLink(webformatURL);
+  console.log("this", imgLink);
+
+  console.log("this", id, webformatURL, imgLink);
+
+  const downloadImage = (imgLink) => {
+  setImgLink(webformatURL);
+
+  console.log("this", id, webformatURL, imgLink);
+
+    saveAs(webformatURL, `${term}.jpg`);
+  };
 
   return (
     <>
-      <div className="fixed w-8/12 h-4/6 bg-green-400 p-5">
+      <div className="fixed w-8/12 h-4/6 bg-green-400 p-5 rounded-lg">
         <div
           onClick={() => {
             setModal((prev) => !prev);
           }}
-          className="absolute top-0 cursor-pointer text-2xl"
+          className="absolute top-6 right-8 cursor-pointer text-3xl drop-shadow-lg text-black"
         >
           x
         </div>
 
-        <div className="flex justify-center items-center text-red-500">
-          <div className="place-items-center content-center justify-self-center justify-center place-self-center place-items-center justify-items-center items-center align-center">
-            <img className="h-[350px]" src={webformatURL} alt="" />
+        <div className="flex bg-green-200 justify-center items-center text-red-500 p-5 rounded-lg">
+          <div className="">
+            <img className="h-[350px] rounded-lg" src={webformatURL} alt="" />
           </div>
-          <div className="flex-col p-10 space-y-4 text-xl">
+          <div className="p-10 space-y-4 text-xl">
             <h1>Photo by {user}</h1>
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
             <h1>Likes: {likes}</h1>
+            <p className="cursor-pointer" onClick={downloadImage}>
+              Download picture
+            </p>
           </div>
         </div>
+        {/* https://pixabay.com/get/g67a77788615563bdf792cdfb51d9318310fdbd263d119ae0d2ede9c7a23adec96549501e8f1c4e802b95095ddea785f39ac815ccbcb2bf90fafc1133ed822309_640.jpg */}
       </div>
     </>
   );

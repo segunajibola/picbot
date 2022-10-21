@@ -10,6 +10,8 @@ function App() {
   const [term, setTerm] = useState("");
   const [modal, setModal] = useState("");
   const [currentImg, setCurrentImg] = useState([]);
+  const [imgLink, setImgLink] = useState("");
+
 
   useEffect(() => {
     fetch(
@@ -20,6 +22,8 @@ function App() {
         setImages(photos.hits);
         console.log(images);
         setIsLoading(false);
+  console.log("img-link", imgLink);
+
       })
       .catch((err) => console.log(err));
   }, [term]);
@@ -27,10 +31,15 @@ function App() {
   const handleClick = (index) => {
     console.log("Clicked image's index", index);
     setCurrentImg(images[index]);
+    setImgLink(currentImg.webformatURL)
+  console.log("img-link", imgLink);
+
+
     setModal(true);
 
-    console.log("current img", currentImg);
+    console.log("current img", currentImg.webformatURL);
   };
+  console.log("img-link", imgLink);
 
   return (
     <div className="bg-[#2A1A1F] h-screen text-white">
@@ -56,8 +65,8 @@ function App() {
       )}
 
       {modal && (
-        <div className="fixed inset-8 bg-green-100 z-10 m-auto w-10/12 h-5/6 justify-center items-center flex text-center">
-          <Modal key={currentImg.id} setModal={setModal} images={images} currentImg={currentImg} />
+        <div className="fixed inset-8 bg-green-100 z-10 m-auto w-[60rem] h-[30rem] justify-center items-center flex rounded-lg">
+          <Modal key={currentImg.id} setModal={setModal} images={images} currentImg={currentImg} setImgLink={setImgLink} imgLink={imgLink} term={term} />
         </div>
       )}
 
