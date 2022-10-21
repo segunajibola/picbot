@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div className="bg-[#2A1A1F] h-screen text-white">
+    <div className="bg-[#2A1A1F] text-white">
       <div className="flex justify-between items-center">
         <h1 className="text-7xl inline text-center">Picbot</h1>
         <a href="https://github.com/segunajibola/picbot">
@@ -54,7 +54,7 @@ function App() {
       )}
 
       {modal && (
-        <div className="fixed inset-8 bg-green-100 z-10 m-auto w-[60rem] h-[30rem] justify-center items-center flex rounded-lg">
+        <div className="fixed inset-8 bg-green-100 z-10 m-auto w-[30rem] md:w-[60rem] h-[30rem] justify-center items-center flex rounded-lg">
           <Modal
             key={currentImg.id}
             setModal={setModal}

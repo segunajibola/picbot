@@ -10,21 +10,21 @@ const Modal = ({ currentImg, setModal, term }) => {
 
   return (
     <>
-      <div className="fixed w-8/12 h-4/6 bg-green-400 p-5 rounded-lg">
+      <div className="fixed w-[27rem] md:w-8/12 h-4/6 bg-green-400 p-2 rounded-lg">
         <div
           onClick={() => {
             setModal((prev) => !prev);
           }}
-          className="absolute top-6 right-8 cursor-pointer text-3xl drop-shadow-lg text-black"
+          className="absolute top-1 md:top-6 right-8 cursor-pointer text-3xl drop-shadow-lg text-black"
         >
           x
         </div>
 
-        <div className="flex bg-green-200 justify-center items-center text-red-500 p-5 rounded-lg">
-          <div className="">
+        <div className="flex bg-green-200 h-[400px] md:h-[430px] justify-center items-center text-red-500 p-5 rounded-lg">
+          <div>
             <img className="h-[350px] rounded-lg" src={webformatURL} alt="" />
           </div>
-          <div className="p-10 space-y-4 text-xl">
+          <div className="p-2 md:p-10 space-y-4 text-xl">
             <h1>Photo by {user}</h1>
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
