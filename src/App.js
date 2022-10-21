@@ -10,7 +10,6 @@ function App() {
   const [term, setTerm] = useState("");
   const [modal, setModal] = useState("");
   const [currentImg, setCurrentImg] = useState([]);
-  const [imgLink, setImgLink] = useState("");
 
   useEffect(() => {
     fetch(
@@ -19,32 +18,25 @@ function App() {
       .then((res) => res.json())
       .then((photos) => {
         setImages(photos.hits);
-        console.log(images);
         setIsLoading(false);
-        console.log("img-link", imgLink);
       })
       .catch((err) => console.log(err));
   }, [term]);
 
   const handleClick = (index) => {
-    console.log("Clicked image's index", index);
     setCurrentImg(images[index]);
-    setImgLink(currentImg.webformatURL);
-    console.log("img-link", imgLink);
-
     setModal(true);
-
-    console.log("current img", currentImg.webformatURL);
   };
-  console.log("img-link", imgLink);
 
   return (
     <div className="bg-[#2A1A1F] h-screen text-white">
-      <div className="flex">
+      <div className="flex justify-between items-center">
         <h1 className="text-7xl inline text-center">Picbot</h1>
-        <span className="items-center content-center justify-items-center">
-          <FaGithub />
-        </span>
+        <a href="https://github.com/segunajibola/picbot">
+          <span className="inline h-4 m-10 text-3xl">
+            <FaGithub />
+          </span>
+        </a>
       </div>
 
       <ImageSearch searchText={(text) => setTerm(text)} images={images} />
