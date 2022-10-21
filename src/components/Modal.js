@@ -1,20 +1,9 @@
-import react, { useState } from "react";
 import { saveAs } from "file-saver";
 
-
-const Modal = ({ currentImg, setModal, setImgLink, imgLink, term }) => {
+const Modal = ({ currentImg, setModal, term }) => {
   const { id, webformatURL, user, comments, downloads, likes } = currentImg;
 
-  setImgLink(webformatURL);
-  console.log("this", imgLink);
-
-  console.log("this", id, webformatURL, imgLink);
-
-  const downloadImage = (imgLink) => {
-  setImgLink(webformatURL);
-
-  console.log("this", id, webformatURL, imgLink);
-
+  const downloadImage = () => {
     saveAs(webformatURL, `${term}.jpg`);
   };
 

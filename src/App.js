@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import ImageCard from "./components/ImageCard";
 import ImageSearch from "./components/ImageSearch";
@@ -12,7 +12,6 @@ function App() {
   const [currentImg, setCurrentImg] = useState([]);
   const [imgLink, setImgLink] = useState("");
 
-
   useEffect(() => {
     fetch(
       `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo`
@@ -22,8 +21,7 @@ function App() {
         setImages(photos.hits);
         console.log(images);
         setIsLoading(false);
-  console.log("img-link", imgLink);
-
+        console.log("img-link", imgLink);
       })
       .catch((err) => console.log(err));
   }, [term]);
@@ -31,9 +29,8 @@ function App() {
   const handleClick = (index) => {
     console.log("Clicked image's index", index);
     setCurrentImg(images[index]);
-    setImgLink(currentImg.webformatURL)
-  console.log("img-link", imgLink);
-
+    setImgLink(currentImg.webformatURL);
+    console.log("img-link", imgLink);
 
     setModal(true);
 
@@ -66,7 +63,13 @@ function App() {
 
       {modal && (
         <div className="fixed inset-8 bg-green-100 z-10 m-auto w-[60rem] h-[30rem] justify-center items-center flex rounded-lg">
-          <Modal key={currentImg.id} setModal={setModal} images={images} currentImg={currentImg} setImgLink={setImgLink} imgLink={imgLink} term={term} />
+          <Modal
+            key={currentImg.id}
+            setModal={setModal}
+            images={images}
+            currentImg={currentImg}
+            term={term}
+          />
         </div>
       )}
 
