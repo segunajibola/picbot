@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import ImageCard from "./components/ImageCard";
 import ImageSearch from "./components/ImageSearch";
@@ -10,8 +10,6 @@ function App() {
   const [term, setTerm] = useState("");
   const [modal, setModal] = useState("");
   const [currentImg, setCurrentImg] = useState([]);
-  const [imgLink, setImgLink] = useState("");
-
 
   useEffect(() => {
     fetch(
@@ -20,34 +18,25 @@ function App() {
       .then((res) => res.json())
       .then((photos) => {
         setImages(photos.hits);
-        console.log(images);
         setIsLoading(false);
-  console.log("img-link", imgLink);
-
       })
       .catch((err) => console.log(err));
   }, [term]);
 
   const handleClick = (index) => {
-    console.log("Clicked image's index", index);
     setCurrentImg(images[index]);
-    setImgLink(currentImg.webformatURL)
-  console.log("img-link", imgLink);
-
-
     setModal(true);
-
-    console.log("current img", currentImg.webformatURL);
   };
-  console.log("img-link", imgLink);
 
   return (
     <div className="bg-[#2A1A1F] h-screen text-white">
-      <div className="flex">
+      <div className="flex justify-between items-center">
         <h1 className="text-7xl inline text-center">Picbot</h1>
-        <span className="items-center content-center justify-items-center">
-          <FaGithub />
-        </span>
+        <a href="https://github.com/segunajibola/picbot">
+          <span className="inline h-4 m-10 text-3xl">
+            <FaGithub />
+          </span>
+        </a>
       </div>
 
       <ImageSearch searchText={(text) => setTerm(text)} images={images} />
@@ -66,7 +55,13 @@ function App() {
 
       {modal && (
         <div className="fixed inset-8 bg-green-100 z-10 m-auto w-[60rem] h-[30rem] justify-center items-center flex rounded-lg">
-          <Modal key={currentImg.id} setModal={setModal} images={images} currentImg={currentImg} setImgLink={setImgLink} imgLink={imgLink} term={term} />
+          <Modal
+            key={currentImg.id}
+            setModal={setModal}
+            images={images}
+            currentImg={currentImg}
+            term={term}
+          />
         </div>
       )}
 

@@ -1,20 +1,10 @@
-import react, { useState } from "react";
 import { saveAs } from "file-saver";
+import { GrDownload } from "react-icons/gr";
 
-
-const Modal = ({ currentImg, setModal, setImgLink, imgLink, term }) => {
+const Modal = ({ currentImg, setModal, term }) => {
   const { id, webformatURL, user, comments, downloads, likes } = currentImg;
 
-  setImgLink(webformatURL);
-  console.log("this", imgLink);
-
-  console.log("this", id, webformatURL, imgLink);
-
-  const downloadImage = (imgLink) => {
-  setImgLink(webformatURL);
-
-  console.log("this", id, webformatURL, imgLink);
-
+  const downloadImage = () => {
     saveAs(webformatURL, `${term}.jpg`);
   };
 
@@ -39,8 +29,8 @@ const Modal = ({ currentImg, setModal, setImgLink, imgLink, term }) => {
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
             <h1>Likes: {likes}</h1>
-            <p className="cursor-pointer" onClick={downloadImage}>
-              Download picture
+            <p className="cursor-pointer text-md pt-10" onClick={downloadImage}>
+              Download picture <GrDownload className="inline" />
             </p>
           </div>
         </div>
