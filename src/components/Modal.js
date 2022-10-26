@@ -16,7 +16,7 @@ const Modal = ({ currentImg, setModal, term }) => {
           onClick={() => {
             setModal((prev) => !prev);
           }}
-          className="absolute top-2 md:top-1 md:top-6 right-4 md:right-8 cursor-pointer text-3xl drop-shadow-lg text-black"
+          className="absolute top-2 md:top-6 right-4 md:right-8 cursor-pointer text-3xl drop-shadow-lg text-black"
         >
           <MdOutlineCancel className="text-[30px]"/>
         </div>
@@ -32,7 +32,7 @@ const Modal = ({ currentImg, setModal, term }) => {
           <div className="h-full p-2 pb-0 md:p-10 space-y-4 md:space-y-4 text-xl">
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
-            <h1 className="pb-[100px] md:pb-10">Likes: {likes}</h1>
+            <h1 className="pb-[100px] md:pb-[170px]">Likes: {likes}</h1>
             <p
               className="border-[2px] border-green-400 cursor-pointer text-sm md:text-md text-center"
               onClick={downloadImage}
