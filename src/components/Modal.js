@@ -28,15 +28,15 @@ const Modal = ({ currentImg, setModal, term }) => {
               alt=""
             />
           </div>
-          <div className="p-2 md:p-10 space-y-2 md:space-y-4 text-xl">
+          <div className="h-full p-2 pb-0 md:p-10 space-y-4 md:space-y-4 text-xl">
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
-            <h1 className="pb-[85px] md:pb-10">Likes: {likes}</h1>
+            <h1 className="pb-[100px] md:pb-10">Likes: {likes}</h1>
             <p
-              className="border-[2px] h-12 border-green-400 cursor-pointer text-sm md:text-md"
+              className="border-[2px] border-green-400 cursor-pointer text-sm md:text-md"
               onClick={downloadImage}
             >
-              Download picture <GrDownload className="inline" />
+              Download <GrDownload className="inline" />
             </p>
           </div>
         </div>
