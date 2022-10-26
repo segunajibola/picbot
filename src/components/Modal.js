@@ -10,7 +10,7 @@ const Modal = ({ currentImg, setModal, term }) => {
 
   return (
     <>
-      <div className="fixed w-[22rem] md:w-8/12 h-[280px] md:h-4/6 bg-green-400 p-2 rounded-lg">
+      <div className="fixed w-[23rem] md:w-8/12 h-[370px] md:h-4/6 bg-green-400 p-2 rounded-lg">
         <div
           onClick={() => {
             setModal((prev) => !prev);
@@ -20,23 +20,23 @@ const Modal = ({ currentImg, setModal, term }) => {
           x
         </div>
 
-        <div className="flex bg-green-200 h-[260px] md:h-[430px] justify-center items-center text-red-500 p-5 rounded-lg">
+        <div className="flex bg-green-200 h-[355px] md:h-[430px] justify-center items-center text-red-500 p-5 rounded-lg">
           <div>
             <img
-              className="h-[240px] md:h-[350px] rounded-lg"
+              className="h-[330px] md:h-[350px] rounded-lg"
               src={webformatURL}
               alt=""
             />
           </div>
-          <div className="p-2 md:p-10 space-y-1 md:space-y-4 text-xl">
+          <div className="h-full p-2 pb-0 md:p-10 space-y-4 md:space-y-4 text-xl">
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
-            <h1 className="pb-6 md:pb-10">Likes: {likes}</h1>
+            <h1 className="pb-[100px] md:pb-10">Likes: {likes}</h1>
             <p
-              className="border-[2px] h-12 border-green-400 cursor-pointer text-sm md:text-md"
+              className="border-[2px] border-green-400 cursor-pointer text-sm md:text-md"
               onClick={downloadImage}
             >
-              Download picture <GrDownload className="inline" />
+              Download <GrDownload className="inline" />
             </p>
           </div>
         </div>
