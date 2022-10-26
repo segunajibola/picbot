@@ -29,7 +29,8 @@ function App() {
   };
 
   return (
-    <div className="bg-[#2A1A1F] text-white">
+    <div className={`bg-[#2A1A1F] pb-20 text-white ${isLoading ? 'h-screen' : 'h-full'}`}>
+      {/* {`overflow-hidden ${darkMode ? "dark" : ""}`}  */}
       <div className="flex justify-between items-center">
         <h1 className="text-7xl inline text-center">Picbot</h1>
         <a href="https://github.com/segunajibola/picbot">

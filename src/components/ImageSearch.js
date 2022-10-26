@@ -19,11 +19,11 @@ const ImageSearch = ({ searchText, images }) => {
           placeholder="input picture name here"
           type="text"
         />
-        <button className="w-1/6 bg-[#2A1A1F] hover:bg-white border-white text-lg md:text-2xl border-4 text-white hover:text-black py-1 px-2 rounded-md">
+        <button className="w-1/6 bg-[#2A1A1F] hover:bg-white border-white text-md md:text-2xl border-[3px] text-white hover:text-black py-1 px-1 rounded-md">
           Search
         </button>
       </form>
-      {images.length ? <p className="p-3 text-2xl">Click each image to see more details.</p> : ""}
+      {images.length && <p className="p-3 text-2xl">Click each image to see more details.</p>}
     </div>
   );
 };
