@@ -1,5 +1,6 @@
 import { saveAs } from "file-saver";
 import { GrDownload } from "react-icons/gr";
+import { MdOutlineCancel } from "react-icons/md";
 
 const Modal = ({ currentImg, setModal, term }) => {
   const { id, webformatURL, user, comments, downloads, likes } = currentImg;
@@ -15,9 +16,9 @@ const Modal = ({ currentImg, setModal, term }) => {
           onClick={() => {
             setModal((prev) => !prev);
           }}
-          className="absolute top-1 md:top-6 right-8 cursor-pointer text-3xl drop-shadow-lg text-black"
+          className="absolute top-2 md:top-1 md:top-6 right-4 md:right-8 cursor-pointer text-3xl drop-shadow-lg text-black"
         >
-          x
+          <MdOutlineCancel className="text-[30px]"/>
         </div>
 
         <div className="flex bg-green-200 h-[355px] md:h-[430px] justify-center items-center text-red-500 p-5 rounded-lg">
@@ -33,10 +34,10 @@ const Modal = ({ currentImg, setModal, term }) => {
             <h1>Download: {downloads}</h1>
             <h1 className="pb-[100px] md:pb-10">Likes: {likes}</h1>
             <p
-              className="border-[2px] border-green-400 cursor-pointer text-sm md:text-md"
+              className="border-[2px] border-green-400 cursor-pointer text-sm md:text-md text-center"
               onClick={downloadImage}
             >
-              Download <GrDownload className="inline" />
+              Download <GrDownload className="inline mb-1" />
             </p>
           </div>
         </div>
