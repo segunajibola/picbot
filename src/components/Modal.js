@@ -31,9 +31,9 @@ const Modal = ({ currentImg, setModal, term }) => {
           <div className="p-2 md:p-10 space-y-1 md:space-y-4 text-xl">
             <h1>Comment: {comments}</h1>
             <h1>Download: {downloads}</h1>
-            <h1>Likes: {likes}</h1>
+            <h1 className="pb-6 md:pb-10">Likes: {likes}</h1>
             <p
-              className="border-1 border-green-400 cursor-pointer text-md pt-8 md:pt-10"
+              className="border-[2px] h-12 border-green-400 cursor-pointer text-sm md:text-md"
               onClick={downloadImage}
             >
               Download picture <GrDownload className="inline" />
