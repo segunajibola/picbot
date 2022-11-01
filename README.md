@@ -91,6 +91,7 @@ You need to confirm that you have this tools before trying to get it to your loc
 </tbody>
 </table>
 
+<p align="right"><a href="#top">Go to top</a></p>
 ### 🛠️ Install locally
 
 1. Copy this project to your github account by forking this repo [here](https://github.com/segunajibola/picbot/fork), or by clicking the fork icon in the top right corner of this repo.
@@ -165,7 +166,7 @@ After pushing your changes, go to your forked repo on github to open a pull requ
 
 - For more information about contributing, check out the [contribution guidelines](/CONTRIBUTING.md).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">Go to top</a></p>
 
 ## Community 👨‍👩‍👦
 
@@ -175,7 +176,7 @@ Join the [WhatsApp community](https://chat.whatsapp.com/E57KqFYQK9B1woySXTaqKr) 
 
 Picbot is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">Go to top</a></p>
 
 ## 💪🏽 Thanks to all Contributors
 
@@ -183,7 +184,7 @@ Thanks a lot for spending your time helping Whisper grow. Thanks a lot! Keep roc
 
 [![Contributors](https://contrib.rocks/image?repo=segunajibola/picbot)](https://github.com/segunajibola/picbot/graphs/contributors)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">Go to top</a></p>
 
 ## 🙏🏽 Support
 
@@ -192,7 +193,7 @@ Show your support for this project by:
 - Click the star🌟 at the top right corner of this repo.
 - Buy me a coffe <a href="https://www.buymeacoffee.com/segunajibola"> <img align="right" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="support segunajibola" /></a>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">Go to top</a></p>
 
 
 
