@@ -129,24 +129,49 @@ Contributing makes this project a great way to collaborate on opensource project
 1. Set up the project locally using the steps above. Step 1 - 6.
 
 2. Create a new remote for the upstream repository.
-For this we will use the following command:
 
-           
-git remote add upstream https://github.com/markodenic/git-demo           
-    
+This is to update your local copy with any changes made in my own repo here. Do this by using this command:
 
-- Contributions make the open source community such an amazing place to learn, inspire, and create.
-- Any contributions you make are greatly appreciated.
-- Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
+  ```bash
+   git remote add upstream https://github.com/segunajibola/picbot 
+   ```
+3. Create a new branch.
+
+ ```bash           
+   git checkout -b name-of-your-branch          
+   ```
+   For example:
+   ```bash           
+   git checkout -b my-branch          
+   ```
+This will create a new branch, and switch to it.
+
+4. Make your changes by adding to the code, create a feature or fix a bug. Make the project better.
+
+5. Add your changes to the staging area.
+```bash           
+   git add .        
+   ```
+6. Commit your changes.
+ ```bash           
+   git commit -m "Adding an awesome feature to my-branch"      
+   ```          
+7. Push your changes to your forked repository.
+  ```bash           
+   git push -u origin my-branch      
+   ```
+8. Create a pull request.
+After pushing your changes, go to your forked repo on github to open a pull request. Click on the “Compare and Pull Request” button. If everything went well, I will merge your pull request after neccessary checks.
+
+- For more information about contributing, check out the [contribution guidelines](/CONTRIBUTING.md).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Community 👨‍👩‍👦
 
-## 👨‍👩‍👦 Community
+Join the [WhatsApp community](https://chat.whatsapp.com/E57KqFYQK9B1woySXTaqKr) to discuss any issues you have.
 
-Don't forget to join the discord community - [Join us](https://discord.gg/ufcysW9q23)
-
-## 🛡️ License
+## License 🧾
 
 Picbot is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
