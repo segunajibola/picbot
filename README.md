@@ -91,10 +91,10 @@ You need to confirm that you have this tools before trying to get it to your loc
 </tbody>
 </table>
 
-### 🛠️ Installation
+### 🛠️ Install locally
 
-1. Fork this project [here](https://github.com/segunajibola/picbot/fork), or click on the fork icon in the top right corner of the github repo to fork it. A forked repo is a copy of the repo in your github account.
-2. After forking the project, clone the project to your local code editor, use the following command in your terminal:
+1. Copy this project to your github account by forking this repo [here](https://github.com/segunajibola/picbot/fork), or by clicking the fork icon in the top right corner of this repo.
+2. Clone the project to your local code editor, use the following command in your terminal:
 
    ```bash
    git clone https://github.com/<your-github-username>/picbot
@@ -122,30 +122,49 @@ You need to confirm that you have this tools before trying to get it to your loc
    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Contribute to the project 💻
+
+Contributing makes this project a great way to collaborate on opensource projects. To contribute, follow these steps below.
+
+1. Set up the project locally using the steps above. Step 1 - 6.
+
+2. Create a new remote for the upstream repository.
+For this we will use the following command:
+
+           
+git remote add upstream https://github.com/markodenic/git-demo           
+    
+
+- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are greatly appreciated.
+- Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## 👨‍👩‍👦 Community
 
+Don't forget to join the discord community - [Join us](https://discord.gg/ufcysW9q23)
 
+## 🛡️ License
 
+Picbot is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
+## 💪🏽 Thanks to all Contributors
 
+Thanks a lot for spending your time helping Whisper grow. Thanks a lot! Keep rocking🍻
 
+[![Contributors](https://contrib.rocks/image?repo=segunajibola/picbot)](https://github.com/segunajibola/picbot/graphs/contributors)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
+## 🙏🏽 Support
 
+Show your support for this project by hitting on a star.🌟
 
-
-
-
-
-
-
-
-
-
-
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
