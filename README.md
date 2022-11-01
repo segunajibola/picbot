@@ -93,37 +93,33 @@ You need to confirm that you have this tools before trying to get it to your loc
 
 ### 🛠️ Installation
 
-1. [Fork](https://github.com/Dun-sin/Whisper/fork) the project. Click on the fork icon in the top right to get started
-2. Clone the project, you can use the following command:
+1. Fork this project [here](https://github.com/segunajibola/picbot/fork), or click on the fork icon in the top right corner of the github repo to fork it. A forked repo is a copy of the repo in your github account.
+2. After forking the project, clone the project to your local code editor, use the following command in your terminal:
 
    ```bash
-   git clone https://github.com/<your-github-username>/Whisper
+   git clone https://github.com/<your-github-username>/picbot
    ```
 
 3. Navigate to the project directory
 
    ```bash
-   cd Whisper
+   cd picbot
    ```
 
-4. Install dependencies with `npm install`
+4. Install any dependencies with `npm install`
 
    ```bash
    npm install
    ```
+   
+5. Create a `.env` file in the main folder. Create a Pixabay account if you don't have, get your API key. Put `REACT_APP_PIXABAY_API_KEY=put-your-api-key-here` in your `.env` file to configure the `.env` file for this project.
 
-5. Use `.env_sample` to configure the `.env` file for this project. For mongodb url use the localhost to test
-   > Check this video of how to do that: https://www.youtube.com/watch?v=D0U8vD8m1I0  
-   > Note: If using Docker, the MongoDB port is **27018**
-
-6. Run npm start in project root directory
+6. Run `npm start` in project root directory using the terminal.
 
    ```bash
    npm start
    ```
-
-   > Both ends of the project rely on each other, for you to work on any end(client or server) they both need to be started with `npm start`
-
+   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
