@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
 <div id="top"></div>
 
 <h2>Picbot</h2>
@@ -58,10 +56,102 @@
  <a href="https://www.vercel.com" target="_blank">
   <img src="https://user-images.githubusercontent.com/74687658/198904547-2153a30f-56d4-47cd-91f1-2951d39c52b8.png" alt="vercel" width="40" height="40"/>
  </a>
- <a href="https://git-scm.com/" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vercel" width="40" height="40"/>
+ <a href="https://code.visualstudio.com/download" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/>
  </a>
 </p>
   </td>
 </tr>
 </table>
+
+## Set-up Locally 💻
+
+To get a local copy in your machine, follow these simple steps below.
+
+### Prerequisites 📰
+
+You need to confirm that you have this tools before trying to get it to your local computer, confirm these tools, click to install each:
+
+<table style="border: none;" cellspacing="0" cellpadding="0">
+ <tbody style="border: none;">
+  <tr style="border: none;">
+   <td style="border: none;">
+ <a href="https://git-scm.com/downloads" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+    <p>Git</p>
+ </a>
+   </td>
+  <td style="border: none;">
+ <a href="https://nodejs.org/en/download/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" alt="node" width="40" height="40"/>
+    <p>Nodejs</p>
+ </a>
+ </td>
+</tr>
+</tbody>
+</table>
+
+### 🛠️ Installation
+
+1. [Fork](https://github.com/Dun-sin/Whisper/fork) the project. Click on the fork icon in the top right to get started
+2. Clone the project, you can use the following command:
+
+   ```bash
+   git clone https://github.com/<your-github-username>/Whisper
+   ```
+
+3. Navigate to the project directory
+
+   ```bash
+   cd Whisper
+   ```
+
+4. Install dependencies with `npm install`
+
+   ```bash
+   npm install
+   ```
+
+5. Use `.env_sample` to configure the `.env` file for this project. For mongodb url use the localhost to test
+   > Check this video of how to do that: https://www.youtube.com/watch?v=D0U8vD8m1I0  
+   > Note: If using Docker, the MongoDB port is **27018**
+
+6. Run npm start in project root directory
+
+   ```bash
+   npm start
+   ```
+
+   > Both ends of the project rely on each other, for you to work on any end(client or server) they both need to be started with `npm start`
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
