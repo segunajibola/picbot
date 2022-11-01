@@ -174,7 +174,7 @@ Join the [WhatsApp community](https://chat.whatsapp.com/E57KqFYQK9B1woySXTaqKr) 
 
 ## License 🧾
 
-Picbot is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Picbot is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## 💪🏽 Thanks to all Contributors
 
