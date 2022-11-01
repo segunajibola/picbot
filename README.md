@@ -176,8 +176,6 @@ Join the [WhatsApp community](https://chat.whatsapp.com/E57KqFYQK9B1woySXTaqKr) 
 
 Picbot is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-<p align="right"><a href="#top">Go to top</a></p>
-
 ## 💪🏽 Thanks to all Contributors
 
 Thanks a lot for spending your time helping Whisper grow. Thanks a lot! Keep rocking🍻
