@@ -120,7 +120,7 @@ You need to confirm that you have this tools before trying to get it to your loc
    npm start
    ```
    
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">Go to top</a></p>
 
 ## Contribute to the project 💻
 
