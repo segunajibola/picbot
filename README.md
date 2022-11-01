@@ -187,7 +187,10 @@ Thanks a lot for spending your time helping Whisper grow. Thanks a lot! Keep roc
 
 ## 🙏🏽 Support
 
-Show your support for this project by hitting on a star.🌟
+Show your support for this project by:
+
+- Click the star🌟 at the top right corner of this repo.
+- Buy me a coffe <a href="https://www.buymeacoffee.com/segunajibola"> <img align="right" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="support segunajibola" /></a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
