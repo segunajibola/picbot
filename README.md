@@ -178,7 +178,7 @@ Picbot is licensed under the MIT License - see the [LICENSE](LICENSE.md) file fo
 
 ## 💪🏽 Thanks to all Contributors
 
-Thanks a lot for spending your time helping Whisper grow. Thanks a lot! Keep rocking🍻
+Thank you for reading this and trying to contribute. 🙏
 
 [![Contributors](https://contrib.rocks/image?repo=segunajibola/picbot)](https://github.com/segunajibola/picbot/graphs/contributors)
 
@@ -192,8 +192,3 @@ Show your support for this project by:
 - Buy me a coffe <a href="https://www.buymeacoffee.com/segunajibola"> <img align="right" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="support segunajibola" /></a>
 
 <p align="right"><a href="#top">Go to top</a></p>
-
-
-
-
-
