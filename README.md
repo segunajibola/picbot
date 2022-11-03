@@ -31,16 +31,16 @@
       <h4> Languages: </h4>
 <p align="left">
  <a href="https://www.w3.org/html/" target="_blank">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"  alt="html5" width="35" height="35"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="35" height="35"/>
  </a>
  <a href="https://tailwindcss.com/" target="_blank">
- <img style="height:50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"/>
+ <img style="height:50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwindcss" width="35" height="35"/>
  </a>
  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-  <img  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+  <img  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="35" height="35"/>
  </a>
  <a href="https://reactjs.org/" target="_blank">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"  alt="react" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"  alt="react" width="35" height="35"/>
  </a>
 </p>
   </td>
@@ -48,16 +48,16 @@
     <h4> Tools: </h4>
 <p align="left">
  <a href="https://www.github.com" target="_blank">
-   <img src="https://user-images.githubusercontent.com/74687658/198907572-90c2ab89-3272-4240-9eb2-84a7599545a1.png" alt="github" width="40" height="40">
+   <img src="https://user-images.githubusercontent.com/74687658/198907572-90c2ab89-3272-4240-9eb2-84a7599545a1.png" alt="github" width="35" height="35">
  </a>
   <a href="https://git-scm.com/" target="_blank">
   <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
  </a>  
  <a href="https://www.vercel.com" target="_blank">
-  <img src="https://user-images.githubusercontent.com/74687658/198904547-2153a30f-56d4-47cd-91f1-2951d39c52b8.png" alt="vercel" width="40" height="40"/>
+  <img src="https://user-images.githubusercontent.com/74687658/198904547-2153a30f-56d4-47cd-91f1-2951d39c52b8.png" alt="vercel" width="35" height="35"/>
  </a>
  <a href="https://code.visualstudio.com/download" target="_blank">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="35" height="35"/>
  </a>
 </p>
   </td>
