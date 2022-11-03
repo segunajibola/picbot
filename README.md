@@ -164,7 +164,7 @@ This will create a new branch, and switch to it.
 8. Create a pull request.
 After pushing your changes, go to your forked repo on github to open a pull request. Click on the “Compare and Pull Request” button. If everything went well, I will merge your pull request after neccessary checks.
 
-- For more information about contributing, check out the [contribution guidelines](/CONTRIBUTING.md).
+<!-- -For more information about contributing, check out the [contribution guidelines](/CONTRIBUTING.md). -->
 
 <p align="right"><a href="#top">Go to top</a></p>
 
