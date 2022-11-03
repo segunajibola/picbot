@@ -77,13 +77,13 @@ You need to confirm that you have this tools before trying to get it to your loc
   <tr style="border: none;">
    <td style="border: none;">
  <a href="https://git-scm.com/downloads" target="_blank">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="35" height="35"/>
     <p>Git</p>
  </a>
    </td>
   <td style="border: none;">
  <a href="https://nodejs.org/en/download/" target="_blank">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" alt="node" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" alt="node" width="35" height="35"/>
     <p>Nodejs</p>
  </a>
  </td>
@@ -180,7 +180,13 @@ Picbot is licensed under the MIT License - see the [LICENSE](LICENSE.md) file fo
 
 Thank you for reading this and trying to contribute. 🙏
 
-[![Contributors](https://contrib.rocks/image?repo=segunajibola/picbot)](https://github.com/segunajibola/picbot/graphs/contributors)
+<!-- [![Contributors](https://contrib.rocks/image?repo=segunajibola/picbot)](https://github.com/segunajibola/picbot/graphs/contributors) -->
+
+<a href="https://github.com/segunajibola/picbot/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=segunajibola/picbot" alt="picbot contributors" width="40" height="40"/>
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 <p align="right"><a href="#top">Go to top</a></p>
 
