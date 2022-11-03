@@ -195,6 +195,9 @@ Made with [contrib.rocks](https://contrib.rocks).
 Show your support for this project by:
 
 - Click the star🌟 at the top right corner of this repo.
-- Buy me a coffe <a href="https://www.buymeacoffee.com/segunajibola"> <img align="right" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="support segunajibola" /></a>
+- Buy me a coffe
+<div>
+   <a href="https://www.buymeacoffee.com/segunajibola"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="support segunajibola"/></a>
+</div>
 
 <p align="right"><a href="#top">Go to top</a></p>
