@@ -201,3 +201,5 @@ Show your support for this project by:
 </div>
 
 <p align="right"><a href="#top">Go to top</a></p>
+
+[![Stargazers](https://git-lister.onrender.com/api/stars/segunajibola/opensource101?limit=15)](https://github.com/segunajibola/opensource101)
