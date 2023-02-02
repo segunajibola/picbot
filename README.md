@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <h2>Picbot</h2>
-<pA web app to search for images, built with React and Pixabay API.</p>
+<p>A web app to search for images, built with React and Pixabay API.</p>
 
 <img src="https://user-images.githubusercontent.com/74687658/198902556-b97725f9-f963-4fef-b9a3-dfec671fa990.png" width="120px">
 
