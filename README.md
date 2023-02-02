@@ -92,6 +92,7 @@ You need to confirm that you have this tools before trying to get it to your loc
 </table>
 
 <p align="right"><a href="#top">Go to top</a></p>
+
 ### 🛠️ Install locally
 
 1. Copy this project to your github account by forking this repo [here](https://github.com/segunajibola/picbot/fork), or by clicking the fork icon in the top right corner of this repo.
