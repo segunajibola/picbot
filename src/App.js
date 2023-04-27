@@ -29,10 +29,10 @@ function App() {
   };
 
   return (
-    <div className={`bg-[#2A1A1F] pb-20 text-white ${isLoading ? 'h-screen' : 'h-full'}`}>
+    <div className={`bg-gradient-to-r from-sky-800 to-indigo-800 pb-20 text-sky-100 ${isLoading ? 'h-screen' : 'h-full'}`}>
       {/* {`overflow-hidden ${darkMode ? "dark" : ""}`} */}
       <div className="flex justify-between items-center">
-        <h1 className="text-7xl inline text-center">Picbot</h1>
+        <h1 className="text-5xl md:text-3xl inline text-center m-4">PicBot</h1>
         <a href="https://github.com/segunajibola/picbot">
           <span className="inline h-4 m-10 text-3xl">
             <FaGithub />
@@ -43,14 +43,14 @@ function App() {
       <ImageSearch searchText={(text) => setTerm(text)} images={images} />
 
       {!term && images.length === 0 && (
-        <h1 className="text-5xl text-center mx-auto mt-32">
-          Input picture name above...
+        <h1 className="text-xl text-center">
+          Enter an object or animal you would like generate  above.😊 
         </h1>
       )}
 
       {term && images.length === 0 && (
-        <h1 className="text-3xl text-center mx-auto mt-32">
-          No Images found, please enter a valid picture name.
+        <h1 className="text-xl text-center text-sky-100 my-10">
+          No Images was found. Enter a valid picture name.
         </h1>
       )}
 
@@ -67,8 +67,8 @@ function App() {
       )}
 
       {term && isLoading ? (
-        <h1 className="text-6xl text-center mx-auto mt-32">
-          Images loading, please wait...
+        <h1 className="text-2xl text-center mx-auto my-10">
+          Images loading, It might take a while...
         </h1>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-11/12 overflow-hidden justify-center align-center m-5">
