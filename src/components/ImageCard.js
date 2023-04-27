@@ -5,10 +5,10 @@ const ImageCard = ({ image }) => {
     const tags = image.tags.split(",");
 
     return (
-        <div className="grid grid-gap-2 max-w-12 md:max-w-96 md:max-h-full overflow-hidden shadow-white shadow-lg border-blue-500 bg-gray-900 rounded-md my-4">
+        <div className="grid grid-gap-2 max-w-12 md:max-w-96 md:max-h-full overflow-hidden shadow-white shadow-lg border-sky-500 rounded-sm my-4">
         <img src={image.webformatURL} alt="" className="w-full h-72 object-cover object-center"/>
         <div className="px-6 py-2">
-          <div className="font-bold text-purple-500 text-xl mb-2">
+          <div className="font-bold text-indigo-500 text-xl mb-2">
           Photo by {image.user}
           </div>
         </div>
